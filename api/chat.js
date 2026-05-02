@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     // Force correct model — override whatever frontend sends
     const body = {
       ...req.body,
-      model: 'claude-haiku-4-5-20251001',
+      model: 'claude-haiku-3-5-20251001',
       max_tokens: req.body.max_tokens || 1000
     };
 
